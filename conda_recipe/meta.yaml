@@ -1,0 +1,22 @@
+package:
+  name: xpdview
+  version: '0.1.0'
+
+source:
+  git_rev: REF_mpl_backend
+  git_url: https://github.com/chiahaoliu/xpdView.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - numpy
+    - matplotlib
+    - pyqt
+
+about:
+  home: https://github.com/xpdAcq/xpdView
+  license: BSD
