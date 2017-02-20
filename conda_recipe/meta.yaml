@@ -3,7 +3,7 @@ package:
   version: '0.1.0'
 
 source:
-  git_rev: REF_mpl_backend
+  git_rev: conda-build
   git_url: https://github.com/chiahaoliu/xpdView.git
 
 requirements:
@@ -13,9 +13,11 @@ requirements:
 
   run:
     - python
-    - numpy
     - matplotlib
-    - pyqt
+
+test:
+    import:
+      - xpdview.viewer
 
 about:
   home: https://github.com/xpdAcq/xpdView
