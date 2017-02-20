@@ -14,11 +14,7 @@ requirements:
   run:
     - python
     - matplotlib >=2.0.0
-    - pyqt >=4.11.4
-
-test:
-    import:
-      - xpdview.viewer
+    - pyqt 4.11
 
 about:
   home: https://github.com/xpdAcq/xpdView
