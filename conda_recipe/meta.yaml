@@ -10,10 +10,11 @@ requirements:
   build:
     - python
     - setuptools
-
+  
   run:
     - python
-    - matplotlib
+    - matplotlib >=2.0.0
+    - pyqt >=4.11.4
 
 test:
     import:
