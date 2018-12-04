@@ -9,8 +9,8 @@ style_fp = rs_fn('xpdview', 'billinge.mplstyle')
 plt.style.use(style_fp)
 
 plt.rcParams['axes.linewidth'] = 3.0
-plt.rcParams['figure.dpi'] = 150
-plt.rcParams['lines.linewidth'] = 2.5
+plt.rcParams['figure.dpi'] = 100
+plt.rcParams['lines.linewidth'] = 2.0
 plt.rcParams['font.size'] = 14
 
 class Waterfall:
@@ -150,8 +150,6 @@ class Waterfall:
             xlabel, ylabel = self.unit
             self.ax.set_xlabel(xlabel)
             self.ax.set_ylabel(ylabel)
-        if self.key_list:
-            self.ax.legend()
         self.canvas.draw_idle()
 
     def update_y_offset(self, val):
