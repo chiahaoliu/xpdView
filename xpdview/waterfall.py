@@ -2,16 +2,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
-from cycler import cycler
 
-from pkg_resources import resource_filename as rs_fn
-style_fp = rs_fn('xpdview', 'billinge.mplstyle')
-plt.style.use(style_fp)
-
-plt.rcParams['axes.linewidth'] = 3.0
-plt.rcParams['figure.dpi'] = 100
-plt.rcParams['lines.linewidth'] = 2.0
-plt.rcParams['font.size'] = 14
 
 class Waterfall:
     """class holds data and generate watefall plot
